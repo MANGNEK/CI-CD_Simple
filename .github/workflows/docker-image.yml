@@ -1,0 +1,22 @@
+name: Simple_CD/CD_Action
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Check_head
+      run: |
+           echo " Check Ok!!"
+           echo "ready Step 1 !! OK"
+      
+      #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
