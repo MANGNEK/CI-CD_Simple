@@ -10,7 +10,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
@@ -25,5 +25,3 @@ jobs:
     - name : buil Soure
       working-directory: . 
       run: docker-compose up -d --build
-          
-      #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
