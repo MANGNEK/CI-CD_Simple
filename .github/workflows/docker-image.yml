@@ -23,7 +23,7 @@ jobs:
       with: 
         dotnet-sersion: 8.0.x
     - name : build Soure
-      working-directory: /
+      working-directory: /home/debian_dev/actions-runner/_work/CI-CD_Simple/CI-CD_Simple/
       run: |
         ls
         
