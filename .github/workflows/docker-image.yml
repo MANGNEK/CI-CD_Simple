@@ -23,7 +23,5 @@ jobs:
       with: 
         dotnet-sersion: 8.0.x
     - name : build Soure
-      #working-directory: /home/debian_dev/actions-runner/_work/CI-CD_Simple/CI-CD_Simple/
-      run: |
-        cd /home/debian_dev/actions-runner/_work/CI-CD_Simple/CI-CD_Simple/
-        docker-compose up -d --build
+      working-directory: /home/debian_dev/actions-runner/_work/CI-CD_Simple/CI-CD_Simple/
+      run: docker-compose up -d --build
