@@ -18,5 +18,12 @@ jobs:
       run: |
            echo " Check Ok!!"
            echo "ready Step 1 !! OK"
-      
+    - name : setup net for build
+      uses: actions/checkout@v3
+      with: 
+        dotnet-sersion: 8.0.x
+    - name : buil Soure
+      working-directory: . 
+      run: docker-compose up -d --build
+          
       #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
