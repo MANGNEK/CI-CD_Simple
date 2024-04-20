@@ -23,6 +23,6 @@ jobs:
       with: 
         dotnet-sersion: 8.0.x
     - name : build Soure
-      working-directory: .
+      working-directory: ..
       run: |
         docker-compose up -d --build
