@@ -25,4 +25,6 @@ jobs:
     - name : build Soure
       working-directory: /
       run: |
-        docker-compose up -d --build
+        ls
+        
+        #docker-compose up -d --build
