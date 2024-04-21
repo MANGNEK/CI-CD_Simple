@@ -23,5 +23,4 @@ jobs:
       with: 
         dotnet-sersion: 8.0.x
     - name : build Soure
-      #working-directory: ./CI-CD_Simple
       run: sudo docker compose up -d --build
